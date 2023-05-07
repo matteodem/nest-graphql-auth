@@ -6,7 +6,6 @@ import { PassportModule } from '@nestjs/passport';
 import { UsersModule } from 'src/users/users.module';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './jwt.strategy';
-console.log(process.env.JWT_SECRET);
 
 @Module({
   imports: [
