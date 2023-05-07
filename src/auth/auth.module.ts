@@ -13,7 +13,7 @@ console.log(process.env.JWT_SECRET);
     PassportModule,
     UsersModule,
     JwtModule.register({
-      signOptions: { expiresIn: '60s' },
+      signOptions: { expiresIn: '10d' },
       secret: 'hide-me-top-secret',
     }),
   ],

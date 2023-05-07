@@ -3,7 +3,7 @@ import { CreateUserInput } from './dto/create-user.input';
 
 @Injectable()
 export class UsersService {
-  private readonly users = [
+  private users = [
     {
       id: 1,
       username: 'userOne',

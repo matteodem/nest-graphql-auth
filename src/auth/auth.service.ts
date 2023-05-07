@@ -18,7 +18,6 @@ export class AuthService {
     const valid = await bcrypt.compare(password, user?.password);
 
     if (user && valid) {
-      // TODO: make more secure
       const { password, ...result } = user;
 
       return result;
